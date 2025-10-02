@@ -1,0 +1,125 @@
+:root {
+  --main-blue: #0B0E66;
+  --main-cyan: #26C7EA;
+  --white: #ffffff;
+  --gray: #9fa6ab;
+  --font-main: 'Roboto', sans-serif;
+  --font-title: 'Cinzel', serif;
+}
+
+/* База */
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  background: var(--white);
+  color: #000;
+}
+
+/* Хедер */
+.header {
+  background: linear-gradient(0deg, rgba(159,166,171,0.5)), url("bir.png") no-repeat center/cover;
+  padding: 15px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+button {
+  height: 42px;
+  width: 141px;
+  background-color: var(--main-blue);
+  color: var(--main-cyan);
+  border: 2px solid var(--main-cyan);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  cursor: pointer;
+}
+
+/* Герой */
+.hero {
+  background: url("men.png") no-repeat center/cover;
+  height: 740px;
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-family: var(--font-title);
+  font-size: 32px;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Трейлер */
+.trailer {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--white);
+}
+
+.trailer img {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Цитати */
+.quote {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.quote h2 {
+  font-family: var(--font-title);
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* Language */
+.language {
+  background: url("lau.jpg") no-repeat center/cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid div {
+  background: rgba(237,230,230,0.7);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(0deg, rgba(43,74,97,0.87)), url("bir.png") no-repeat center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 40px 20px;
+}
