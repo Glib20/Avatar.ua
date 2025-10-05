@@ -61,13 +61,20 @@ button {
   justify-content: center;
   flex-direction: column;
 }
+.hero .container
+{ display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+ 
+}
 
 .hero h1 {
   font-family: var(--font-title);
   font-size: 32px;
 }
 
-.socials {
+.hero-bat {
   margin-top: 20px;
   display: flex;
   gap: 15px;
@@ -81,7 +88,7 @@ button {
 }
 
 .trailer img {
-  max-width: 600px;
+  max-width: 1440px;
   width: 100%;
 }
 
@@ -118,8 +125,11 @@ button {
 
 /* Footer */
 footer {
-  background: linear-gradient(0deg, rgba(43,74,97,0.87)), url("bir.png") no-repeat center/cover;
-  color: var(--white);
-  text-align: center;
-  padding: 40px 20px;
+    background-image: linear-gradient(0deg, rgba(43, 74, 97, 0.87)), url(lan.png);
+    color: #ffffff;
+    background-size: cover;
+    height: 233px;
+    background-repeat: no-repeat;
+    background-position: center;
+    list-style: none;
 }
